@@ -1,0 +1,10 @@
+CREATE INDEX projects_created_by_idx on projects(created_by);
+CREATE INDEX tasks_deadline_idx on tasks(deadline);
+CREATE INDEX task_users_task_id_idx on task_users(task_id);
+CREATE INDEX task_users_from_user_id_idx on task_users(from_user_id);
+CREATE INDEX task_users_to_user_id_idx on task_users(to_user_id);
+CREATE INDEX team_members_team_id_idx on team_members(team_id);
+CREATE INDEX team_members_user_id_idx on team_members(user_id);
+CREATE INDEX comments_task_id_idx on comments(task_id);
+CREATE INDEX comments_user_id_idx on comments(user_id);
+CREATE INDEX comments_created_at_idx on comments(created_at);
